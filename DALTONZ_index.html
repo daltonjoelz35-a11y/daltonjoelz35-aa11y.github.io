@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalton Joe Graphics</title>
+
+    <style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#fbfcfd;color:#222}
+header{background:linear-gradient(135deg,#9eb6e4,#5537fe);color:#fff;text-align:center;padding:30px 20px}
+.logo{width:95px;height:95px;border-radius:50%;background:#f7f7f7;color:#0057D9;font-size:30px;font-weight:bold;display:flex;align-items:center;justify-content:center;margin:0 auto 15px}
+nav{background:#0047b8;padding:12px;text-align:center;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:bold}
+section{padding:25px}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.slider{max-width:900px;margin:auto}
+.slider img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:none}
+.slider img.active{display:block}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:20px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.btn{display:inline-block;background:#00A651;color:#fff;padding:12px 20px;border-radius:30px;text-decoration:none;margin-top:10px}
+footer{background:#0057D9;color:#fff;text-align:center;padding:18px;margin-top:20px}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">DJG</div>
+<h1>Dalton Joe Graphics</h1>
+<p>Professional Graphics • Photo Editing • Branding</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<div class="card">
+<h2>About Us</h2>
+<p><b>Dalton Joe Graphics</b> is a creative design brand based at Small Gate, Bugema University Main Campus. We specialize in posters, birthday flyers, branding, portraits and professional photo editing.</p>
+</div>
+</section>
+
+<section id="portfolio">
+<h2 style="text-align:center;color:#0057D9;">Featured Designs</h2>
+
+<div class="slider">
+<img src="33fd17edc8f9d40bc66e1457eb5bc984.jpg" class="active">
+<img src="1000284998 (1).png">
+<img src="1779662575234.jpg">
+<img src="b64ea0bee6e4b8dfad83c68c9cecce7d.jpg">
+<img src="c7a926d6a573fb378c5e53dd9ff78a36.jpg">
+<img src="DALTON KUPIRI.jpg">
+<img src="file_00000000e00071fd9b6ecfa43c809ac7.png">
+<img src="file_00000000eb94720cac6d66e9262375ed.png">
+<img src="file_000000003c3071fb828a86f5f40711f1.png">
+<img src="file_0000000024dc71fd8172ecefb6e7465a.png">
+<img src="file_00000000982c71fd87d4f4627d750e00.png">
+<img src="file_00000000236871f8bd494456f9b6d729_1.png">
+<img src="IMG-20260516-WA0218.jpg">
+<img src="PSX_20260319_4519.jpg">
+</div>
+
+<div class="gallery">
+<img src="33fd17edc8f9d40bc66e1457eb5bc984.jpg">
+<img src="1000284998 (1).png">
+<img src="1779662575234.jpg">
+<img src="b64ea0bee6e4b8dfad83c68c9cecce7d.jpg">
+<img src="c7a926d6a573fb378c5e53dd9ff78a36.jpg">
+<img src="DALTON KUPIRI.jpg">
+<img src="file_00000000e00071fd9b6ecfa43c809ac7.png">
+<img src="file_00000000eb94720cac6d66e9262375ed.png">
+<img src="file_000000003c3071fb828a86f5f40711f1.png">
+<img src="file_0000000024dc71fd8172ecefb6e7465a.png">
+<img src="file_00000000982c71fd87d4f4627d750e00.png">
+<img src="file_00000000236871f8bd494456f9b6d729_1.png">
+<img src="IMG-20260516-WA0218.jpg">
+<img src="PSX_20260319_4519.jpg">
+</div>
+</section>
+
+<section id="contact">
+<div class="card">
+<h2>Contact</h2>
+<p><b>Location:</b> Small Gate, Bugema University Main Campus</p>
+<p><b>Phone:</b> +256791005495</p>
+<p><b>Email:</b> daltonjoelz35@gmail.com</p>
+
+<a class="btn" href="https://wa.me/256791005495">Chat on WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Dalton Joe Graphics. All Rights Reserved.</p>
+</footer>
+
+<script>
+let slides=document.querySelectorAll(".slider img");
+let i=0;
+setInterval(()=>{
+slides[i].classList.remove("active");
+i=(i+1)%slides.length;
+slides[i].classList.add("active");
+},5000);
+</script>
+
+</body>
+</html>
